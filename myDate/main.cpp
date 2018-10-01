@@ -12,15 +12,11 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-
-    int I = 2018;
-    int J = 10;
-    int K = 1;
     
-    int JD= K-32075+1461*(I+4800+(J-14)/12)/4+367*(J-2-(J-14)/12*12)/12-3*((I+4900+(J-14)/12)/100)/4;
-    
-    cout << JD;
-    
+    myDate d1 = myDate(10, 1, 2018);
+    myDate d2 = myDate(10, 1, 2017);
+    d1.decreaseDate(1);
+    d1.display();
     
     return 0;
 }
