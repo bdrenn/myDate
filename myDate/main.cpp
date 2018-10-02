@@ -13,7 +13,9 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    myDate d1 = myDate(10, 1, 2018);
+    myDate d1 = myDate(2, 29, 2018);
+    d1.display();
+    cout << d1.dayName();
     
     
     return 0;

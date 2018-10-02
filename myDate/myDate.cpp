@@ -98,16 +98,12 @@ int myDate::daysBetween(myDate D){
 }
 
 string myDate::dayName(){
-    string dName = "";
-//    int f = 0;
-//    int k = day;
-//    int D = year % 100; //last two digits
-//    int C = year / 100; //first two digits
-//
-//    //f = k + [(13*m-1)/5] + D + [D/4] + [C/4] - 2*C;
+    string dName[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
     
-    
-    return dName;
+    int JD = G2J(day, month, year);
+    int temp = JD % 7;
+
+    return dName[temp];
 }
 
 int myDate::getMonth(){
