@@ -97,4 +97,29 @@ int myDate::daysBetween(myDate D){
     return dB;
 }
 
+string myDate::dayName(){
+    string dName = "";
+//    int f = 0;
+//    int k = day;
+//    int D = year % 100; //last two digits
+//    int C = year / 100; //first two digits
+//
+//    //f = k + [(13*m-1)/5] + D + [D/4] + [C/4] - 2*C;
+    
+    
+    return dName;
+}
+
+int myDate::getMonth(){
+    return month;
+}
+
+int myDate::getDay(){
+    return day;
+}
+
+int myDate::getYear(){
+    return year;
+}
+
 
