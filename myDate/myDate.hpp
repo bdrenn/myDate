@@ -1,10 +1,9 @@
-//
-//  myDate.hpp
-//  myDate
-//
-//  Created by Brian Drennan on 10/1/18.
-//  Copyright © 2018 Brian Drennan. All rights reserved.
-//
+/*
+ Name: Brian Drennan
+ Class: CECS 282-05
+ Project Name: Prog 2 - myDate
+ Due Date: 10/04/2018
+ */
 
 #ifndef myDate_hpp
 #define myDate_hpp

@@ -1,4 +1,9 @@
-//Brian Drennan 015703413
+/*
+ Name: Brian Drennan
+ Class: CECS 282-05
+ Project Name: Prog 2 - myDate
+ Due Date: 10/04/2018
+ */
 
 #include "myDate.hpp"
 #include <iostream>
@@ -66,8 +71,9 @@ myDate::myDate(int m, int d, int y){
 }
 
 void myDate::display(){
+    string months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     
-    cout << month << " " << day << " " << year << "\n";
+    cout << months[month - 1] << " " << day << ", " << year << "\n";
 }
 
 void myDate::increaseDate(int x){
@@ -116,6 +122,16 @@ int myDate::getDay(){
 
 int myDate::getYear(){
     return year;
+}
+
+int myDate::dayOfYear(){
+    int JDStart = G2J(1, 1, year);
+    int JDCurrent = G2J(day, month, year);
+    
+    int diff = JDCurrent - JDStart;
+    
+    return diff + 1;
+    
 }
 
 

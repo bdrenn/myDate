@@ -1,10 +1,9 @@
-//
-//  main.cpp
-//  myDate
-//
-//  Created by Brian Drennan on 10/1/18.
-//  Copyright © 2018 Brian Drennan. All rights reserved.
-//
+/*
+ Name: Brian Drennan
+ Class: CECS 282-05
+ Project Name: Prog 2 - myDate
+ Due Date: 10/04/2018
+ */
 
 #include <iostream>
 #include "myDate.hpp"
@@ -13,9 +12,9 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    myDate d1 = myDate(2, 29, 2018);
-    d1.display();
-    cout << d1.dayName();
+    myDate d1 = myDate(3, 1, 2018);
+    myDate d2 = myDate(2, 29, 2020);
+    cout << d2.dayOfYear();
     
     
     return 0;
