@@ -30,7 +30,6 @@ public:
     int getDay(); //return day
     int getYear(); // returns year
     int dayOfYear(); //returns the number day since year began
-    
 };
 
 #endif /* myDate_hpp */
